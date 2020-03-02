@@ -5,7 +5,7 @@ JPA is a specification , It's lightweight , POJO based framework , used to presi
 ### How it maps ??
 Some metadata is needed to map the data to database
 
-### JPA Components : 3 Main Components
+### JPA Components :  
 	Entity 
 	Entity Manager 
 	Entity Manager Factory
