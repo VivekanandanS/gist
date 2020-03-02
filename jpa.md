@@ -30,7 +30,7 @@ With Entity Manager ,we  can presist entity, change state of entity and remove t
 #### Entity Manager Factory 
   
 Entity Manager Factory is used to create the instance of Entity Manager
-Its necessary to close the EMF when app crashes of shutsdown.
+Its necessary to close the EMF when app crashes or shutsdown.
 
 #### Entity Transaction
 
@@ -84,8 +84,8 @@ Rules:
 
 #4 In @ManytoMany relationship both sides can be owing side.
 
-** mappedby refers to primary table
-** Owning side determines , how presistance runtime makes update to relationship in database.
+** mappedby refers to primary table  
+** Owning side determines , how presistance runtime makes update to relationship in database.  
 
 
 
