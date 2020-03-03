@@ -17,17 +17,17 @@ Initially, the problem of being starving can be addressed by the setting request
 
 ## Circuit Breaker 
 
-Instead to adding a request timeout value, add circuit breaker can be introduced into the system which monitor the serive availablity and reponsiveness. If service is available and responsive the circuit will remain closed so that all the request made by the consumer is passed to the service to respond. Unlikely If service is unavailable or not reponsive the circuit opens and consumer is responded with error right away.
+IInstead of adding a request timeout value, add circuit breaker can be introduced into the system which monitors the service availability and responsiveness. If service is available and responsive the circuit will remain closed so that all the request made by the consumer is passed to the service to respond. Unlikely If service is unavailable or not responsive the circuit opens and the consumer is responded with an error right away.
 
-Simple way to monitor a remote service is to a heart beat check which relatively simple and inexpensive. But heartbeat tells about the availability of the remote service but hardly about the reponsiveness of the actual request. To monitor the responsiveness of the actual request, synthetic request (fake transaction) can be made to the service to arrive at accurate measure of the responsiveness.
+The simple way to monitor a remote service is to a heartbeat check which relatively simple and inexpensive. But heartbeat tells about the availability of the remote service but hardly about the responsiveness of the actual request. To monitor the responsiveness of the actual request, synthetic requests (fake transactions) can be made to the service to arrive at the accurate measure of the responsiveness.
 
-Sythentic transaction can tricky and time consuming as all parts of the service need to know about the transcation is synthetic.
+A synthetic transaction can tricky and time-consuming as all parts of the service need to know about the transaction is synthetic.
 
 
 ![Timeout: Availablilty and Responsiveness](https://github.com/VivekanandanS/gist/blob/master/resources/images/microservices/circuit-breaker.png)
 
 
-Another way to monitor a remote service is to monitor the live transactions for responsiveness. Once the thershold is reached, the circuit moves to half open state. When responsiveness goes below the thershold circuit is closed . Circuit is closed when thershold becomes normal.
+Another way to monitor a remote service is to monitor the live transactions for responsiveness. Once the threshold is reached, the circuit moves to a half-open state. When responsiveness goes below the threshold circuit is closed. The circuit is closed when threshold becomes normal.
 
 
 
