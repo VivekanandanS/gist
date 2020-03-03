@@ -4,7 +4,7 @@ When migrating a monolithic application to a microservice architechure, two thin
 
 ![Data Migration : Monolith to Microservices](https://github.com/VivekanandanS/gist/blob/master/resources/images/microservices/datamigration.png)
 
-The above illustration shows microservices architecture broken down from a monolith, which has three services with bounded context, no shared state owing to its data. Let's see what happens during the migration process.
+The above illustration shows microservices architecture broken down from a monolith, which has three services with bounded context, no shared state owing its data. Let's see what happens during the migration process.
 
 ### Large Volume of Data is being Migrated !!
 
