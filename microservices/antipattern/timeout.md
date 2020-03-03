@@ -10,12 +10,12 @@ Responsiveness: Does the system capable of responding to all the requests within
 If a service consumer talks to a service and then service consumers usually be notified with an error or a response. If the system fails to respond within the average time taken previously for the same request, the consumer has to wait until the request gets timed-out.
 
 
-Rushing to solve the problem :
+## Rushing to solve the problem :
 
 Initially, the problem of being starving can be addressed by the setting request timeout value by the service consumer. This value can be set using doubling technique ( Twice the average amount of time taken for the same request made previously ) If the service seems to be available, but then failed to respond to consumer request; the consumer can either respond to the user with an error scenario or find make another retry.
 
 
-Circuit Breaker 
+## Circuit Breaker 
 
 Instead to adding a request timeout value, add circuit breaker can be introduced into the system which monitor the serive availablity and reponsiveness. If service is available and responsive the circuit will remain closed so that all the request made by the consumer is passed to the service to respond. Unlikely If service is unavailable or not reponsive the circuit opens and consumer is responded with error right away.
 
